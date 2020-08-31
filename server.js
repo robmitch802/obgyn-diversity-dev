@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 
-//use bodyParser to support app/json post data
+app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, '/client/build')))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
