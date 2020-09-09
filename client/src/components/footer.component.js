@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Nav } from 'react-bootstrap';
+import Login from './login-modal.component';
 
 export default class Footer extends Component {
     render() {
@@ -16,8 +17,18 @@ export default class Footer extends Component {
                     <Nav.Item>
                         <Nav.Link className="footer-text" href="/resources">Resources</Nav.Link>
                     </Nav.Item>
+                       
                     <Nav.Item>
-                        <Nav.Link className="footer-text" href="/login">Log In</Nav.Link>
+                        <Nav.Link className="footer-text">
+                        <Login 
+                            modalShow={this.props.modalShow}
+                            loggedIn={this.props.loggedIn}
+                            //methods
+                            setModalShow={this.props.setModalShow}
+                            logIn={this.props.logIn}
+                            logOut={this.props.logOut}
+                           />
+                        </Nav.Link>
                     </Nav.Item>
                 </Nav>
                 
