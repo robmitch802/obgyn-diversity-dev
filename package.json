@@ -21,8 +21,16 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {},
-  "description": "",
   "engines": {
     "node": "12.14.x"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robmitch802/obgyn-diversity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robmitch802/obgyn-diversity/issues"
+  },
+  "homepage": "https://github.com/robmitch802/obgyn-diversity#readme",
+  "description": ""
 }
