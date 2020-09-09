@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
+import { Card, Button } from 'react-bootstrap';
 
-export default class Minutes extends Component {
+export default class Meetings extends Component {
 
     render() {
         return(
             <div>
                 <br />
-                <h2 className="hed-text">Minutes from Meetings</h2>
+                <h2 className="hed-text">Meetings</h2>
                 <p className="text-danger">This page will be login protected</p>
+                <Card className="text-center">
+                    <Card.Header>Next Meeting: </Card.Header>
+                    <Card.Body>
+                        <Card.Title>Wednesday, October 22, 2020</Card.Title>
+                        <Card.Text>
+                            <span className="strong">Where:&nbsp;</span><span>MGH Board Room</span> <br />
+                            <span className="strong">Time:&nbsp;</span><span>3:30 p.m.</span> <br />
+                            <Button varant="primary" href="/">Zoom Meeting Link</Button>
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <br />
                 <ul className="list-unstyled">
                     <li className="body-text"><a href="/">Minutes from Meeting of Aug. 13, 2020</a>&nbsp;<span className="small">Posted Aug. 18, 2020</span></li>
                     <li className="body-text"><a href="/">Minutes from Meeting of July 15, 2020</a>&nbsp;<span className="small">Posted Aug. 18, 2020</span></li>

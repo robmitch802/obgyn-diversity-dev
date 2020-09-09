@@ -25,8 +25,8 @@ export default class NavBar extends Component {
                        <Nav.Link className="body-text-20" href="/">Home</Nav.Link> 
                        <Nav.Link className="body-text-20" href="/news">News</Nav.Link> 
                        <Nav.Link className="body-text-20" href="/resources">Resources</Nav.Link> 
-                       <Nav.Link className="body-text-20" href="/minutes">Minutes</Nav.Link> 
-                       <Nav.Link className="body-text-20" href="/internal">Internal</Nav.Link> 
+                       <Nav.Link className="body-text-20" href="/meetings">Meetings</Nav.Link> 
+                       <Nav.Link className="body-text-20" href="/inequity">Inequity Inbox</Nav.Link> 
                        <Nav.Link className="body-text-20" href="/admin">Admin</Nav.Link> 
                        <Nav.Link className="body-text-20" href="/login">Log In</Nav.Link> 
                     </Nav>

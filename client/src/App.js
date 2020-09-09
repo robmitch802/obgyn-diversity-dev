@@ -6,8 +6,8 @@ import NavBar from './components/navbar.component';
 import About from './components/about.component';
 import Admin from './components/admin.component';
 import Footer from './components/footer.component';
-import Internal from './components/internal.component';
-import Minutes from './components/minutes.component';
+import Inequity from './components/inequity.component';
+import Meetings from './components/meetings.component';
 import News from './components/news.component';
 import Resources from './components/resources.component';
 
@@ -21,9 +21,9 @@ function App() {
           <br />
           <Route path="/" exact component={About} />
           <Route path="/news" component={News} />
-          <Route path="/minutes" component={Minutes} />
+          <Route path="/meetings" component={Meetings} />
           <Route path="/admin" component={Admin} />
-          <Route path="/internal" component={Internal} />
+          <Route path="/inequity" component={Inequity} />
           <Route path="/resources" component={Resources} />
         <Footer />
       </div>
