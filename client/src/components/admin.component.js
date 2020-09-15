@@ -2,27 +2,29 @@ import React, { Component } from 'react';
 import { Form, Col, Row, Container, ListGroup } from 'react-bootstrap'
 import CreateArticle from './admin-create-article.component'
 //import axios from 'axios';
-import { Link } from 'react-router-dom'
 
 
-export default class Admin extends Component {
-    constructor(props) {
+export default class Admin extends Component{
+    constructor(props){
         super(props);
-
         this.state={
-            isLoggedIn: false,
+            title: '',
+            text:'',
+            date: new Date(),
+            author: '',
         }
-
     }
-    render() {
+    render(){
         return(
+            this.props.loggedIn ? 
+            <div>
             <Container>
-            <h2>Admin Interface</h2>
+            <h2>Admin Page</h2>
             <p className="text-danger">This page will be login protected</p>
             <Row>
                 <Col lg={3} >
                     <ListGroup>
-                        <ListGroup.Item><Link to="/">New Article</Link></ListGroup.Item>
+                        <ListGroup.Item><CreateArticle />New Article</ListGroup.Item>
                         <ListGroup.Item>Edit Article</ListGroup.Item>
                         <ListGroup.Item>Post Minutes</ListGroup.Item>
                         <ListGroup.Item>Post Resource</ListGroup.Item>
@@ -70,6 +72,9 @@ export default class Admin extends Component {
             </Col>
             </Row>
             </Container>
+            </div>
+            :
+            <div id="login-message body-text-20"> Log in to see this page</div>
         )
     }
 }

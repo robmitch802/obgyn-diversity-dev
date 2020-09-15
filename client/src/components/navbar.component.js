@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import Login from './login-modal.component';
 
 export default class NavBar extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state={
+            loggedIn: false,
+        }
+    }
 
     render(){
         return (
@@ -43,7 +50,7 @@ export default class NavBar extends Component {
                        <Nav.Link className="body-text-20" href="/meetings">Meetings</Nav.Link> 
                        <Nav.Link className="body-text-20" href="/inequity">Inequity Inbox</Nav.Link> 
                        <Nav.Link className="body-text-20" href="/admin">Admin</Nav.Link> 
-                       <Nav.Link className="body-text-20" onClick={this.props.logOut} ></Nav.Link> 
+                       <Nav.Link className="body-text-20" onClick={this.props.logOut} >Log Out</Nav.Link> 
                        </>
                        }
                     </Nav>

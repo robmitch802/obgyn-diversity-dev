@@ -33,6 +33,7 @@ setModalShow = () => {
       modalShow: true
     })
 };
+
 logIn = (event) => {
   event.preventDefault();
   this.setState({
@@ -46,9 +47,6 @@ logOut = (event) => {
       loggedIn: false,
     }) 
 }
-
-
-
 
 render() {
   return (
@@ -65,10 +63,18 @@ render() {
           <br />
           <Route path="/" exact component={About} />
           <Route path="/news" component={News} />
-          <Route path="/meetings" component={Meetings} />
-          <Route path="/admin" component={Admin} />
-          <Route path="/inequity" component={Inequity} />
-          <Route path="/resources" component={Resources} />
+          <Route path="/meetings">
+            <Meetings loggedIn={this.state.loggedIn} />
+          </Route>
+          <Route path="/admin" > 
+            <Admin loggedIn={this.state.loggedIn} />
+          </Route>
+          <Route path="/inequity">
+            <Inequity loggedIn={this.state.loggedIn} />
+          </Route>
+          <Route path="/resources">
+            <Resources loggedIn={this.state.loggedIn} />  
+          </Route>
         <Footer 
                 loggedIn={this.state.loggedIn}
                 modalShow={this.state.modalShow}
