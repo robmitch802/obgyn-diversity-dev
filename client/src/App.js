@@ -23,6 +23,7 @@ export default class App extends Component {
     }
   };
 
+//-----------------Log in functions---------------------//
 setModalShow = () => {
   this.state.modalShow ?
     this.setState({
@@ -45,6 +46,10 @@ logOut = (event) => {
       loggedIn: false,
     }) 
 }
+
+
+
+
 render() {
   return (
     <Router>

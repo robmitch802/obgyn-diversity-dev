@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Col, Row, Container, ListGroup } from 'react-bootstrap'
-//import CreateArticle from './admin-create-article.component'
+import CreateArticle from './admin-create-article.component'
 //import axios from 'axios';
 import { Link } from 'react-router-dom'
 
@@ -12,8 +12,6 @@ export default class Admin extends Component {
         this.state={
             isLoggedIn: false,
         }
-        //this.onChangeDate = this.onChangeDate.bind(this);
-        //this.onSubmit = this.onSubmit.bind(this);
 
     }
     render() {
