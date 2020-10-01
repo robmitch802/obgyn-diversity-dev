@@ -10,13 +10,19 @@ import Inequity from './components/inequity.component';
 import Meetings from './components/meetings.component';
 import News from './components/news.component';
 import Resources from './components/resources.component';
+import SignUpPage from './components/signup.component';
 import './App.css';
+import firebase from 'firebase/app';
+import 'firebase/auth';
 
+//App class begins
 export default class App extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
+      email: '',
+      password: '',
       loggedIn: false,
       logoutOff: true,
       modalShow: false,
@@ -37,14 +43,20 @@ setModalShow = () => {
 logIn = (event) => {
   event.preventDefault();
   this.setState({
+    email: '',
+    password: '',
     loggedIn: true,
     modalShow: false
   })
 }
+
+
 logOut = (event) => {
     event.preventDefault();
     this.setState({
       loggedIn: false,
+      modalShow: false,
+      display: ''
     }) 
 }
 
@@ -53,6 +65,10 @@ render() {
     <Router>
       <div className="container">
         <NavBar
+          email={this.state.email}
+          password={this.state.password}
+          display={this.state.display}
+          displayColor={this.state.displayColor}
           loggedIn={this.state.loggedIn}
           modalShow={this.state.modalShow}
           //methods
@@ -74,6 +90,9 @@ render() {
           </Route>
           <Route path="/resources">
             <Resources loggedIn={this.state.loggedIn} />  
+          </Route>
+          <Route path="/signup">
+            <SignUpPage />
           </Route>
         <Footer 
                 loggedIn={this.state.loggedIn}

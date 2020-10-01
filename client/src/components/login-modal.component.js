@@ -26,12 +26,12 @@ export default class Login extends Component {
                     administrators before you can access the rest of the site.</Modal.Body>
                 <div>
                 <Form>
-                    <Form.Group controlId="formBasicEmail" >
+                    <Form.Group controlId="formBasicEmail" style={{margin:15}} >
                         <Form.Label>Email Address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
                         <Form.Text className="text-muted"></Form.Text>
                     </Form.Group>
-                    <Form.Group controlId="formBasicPassword" >
+                    <Form.Group controlId="formBasicPassword" style={{margin:15}}>
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                         <Form.Text className="text-muted"></Form.Text>
