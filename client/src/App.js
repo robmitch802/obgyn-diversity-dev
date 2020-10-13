@@ -12,7 +12,6 @@ import News from './components/news.component';
 import Resources from './components/resources.component';
 import SignUpPage from './components/signup.component';
 import './App.css';
-import firebase from 'firebase/app';
 import 'firebase/auth';
 
 //App class begins
@@ -60,6 +59,10 @@ logOut = (event) => {
     }) 
 }
 
+componentDidMount(){
+  console.log("App.js has loaded...")
+  console.log(process.env.REACT_APP_AUTH_DOMAIN)
+}
 render() {
   return (
     <Router>

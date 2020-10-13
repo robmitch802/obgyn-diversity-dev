@@ -1,68 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Epics
 
-## Available Scripts
+## General site design w/clear navigation
 
-In the project directory, you can run:
+-Consistent colors, design and easy navigation (4 hours)
 
-### `npm start`
+-Mobile-friendly design, responsive to tablet and smartphone navigation (1 hour)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## News page w/updated news
 
-### `npm test`
+-News feed in reverse chronological order (most recent at top) landing page with latest news updates (2 hours)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Article page when click through to individual news articles (2 hours)
 
-### `npm run build`
+-Ability to pin article at top of page (2 hours)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Internal information pages, updatable
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Meetings page with minutes feed in reverse chronological order (1 hour)
 
-### `npm run eject`
+-Upcoming meeting pin at the top of page (1.5 hours)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-Resources page - updatable page (1 hour)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Inequity Inbox (.25 hours)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Admin page for posting, editing, etc.  
 
-## Learn More
+-Admin interface with a rich text editor interface for posting / editing:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  -News articles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  -Meetings minutes
 
-### Code Splitting
+  -Meetings pin
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+  -Resources page
 
-### Analyzing the Bundle Size
+  -Inequity Inbox page
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+(8 hours)
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## User creation and administration
 
-### Advanced Configuration
+-Integration with Google Firebase Authentication module, allows for secure login, protected areas of the site. (6 hours) 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+-Integrate Firebase with Admin to allow for user approval / updating from admin page (*can also be done via Firebase login, without this development) (6 hours)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## General resource creation 
 
-### `npm run build` fails to minify
+-Create Firebase (auth module), Heroku (hosting), MongoDB (content database) accounts specific to web site (1 hour). *Once these are set up, they are free to use, and logins, etc. will be property of OBGYN Diversity Committee.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-Develop dbase storage models for articles, etc. (3 hours)
+
+-Image storage file server (4 hours)
+
+
+## Demo Development & Deployment
+
+-Create demo version of site, deploy to Heroku for client testing and feedback (5 hours)
+
+-Demo updates (3 hours)
+
+## Contingency Work
+
+(5 hours) Contingency is included in the quote to account for unexpected requests or changes that are on the edge of the original scope, or unexpected snags in development. The invoice will not exceed the original quote, including contingency work, unless the developer requotes the work and the client agrees to the revised quote. 

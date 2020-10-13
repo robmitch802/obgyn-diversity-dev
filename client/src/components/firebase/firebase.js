@@ -3,7 +3,7 @@ import 'firebase/auth';
 
 //firebase authentication
 const config = {
-    apiKey: process.env.REACT_APP_API_KEY,
+    apiKey: "AIzaSyDje7_Ik8TP5qLq3D8aooVRImgKQFPQ19c",
     authDomain: process.env.REACT_APP_AUTH_DOMAIN,
     databaseURL: process.env.REACT_APP_DATABASE_URL,
     projectId: process.env.REACT_APP_PROJECT_ID,
@@ -12,6 +12,8 @@ const config = {
     appId: process.env.REACT_APP_APP_ID,
     measurementId: process.env.REACT_APP_MEASUREMENT_ID
   };
+
+  // process.env.REACT_APP_API_KEY
 
 export default class Firebase {
     constructor() {
